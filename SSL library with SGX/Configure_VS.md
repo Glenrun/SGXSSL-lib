@@ -19,7 +19,7 @@ If you already have a basic application and an enclave project, to use the Intel
 	   This file can be found in either the App or Enclave on the src directory
 	   ```
 
--   In the **Enclave** project (do these steps to all of your build environments):
+###  In the **Enclave** project (do these steps to all of your build environments):
 
 	-   Select **Properties->Linker->Input->Additional Dependencies:**
 
@@ -47,8 +47,7 @@ If you already have a basic application and an enclave project, to use the Intel
      ```			
 
 
--   In the **Application** project, use the following steps to set up the environment for the Intel® SGX SSL library:
-		-Intel® Software Guard Extensions SSL Developer Guide
+###   In the **Application** project, use the following steps to set up the environment 
 
 	-   Select **Properties->Linker->Input->Additional Dependencies:** Add ‘‘libsgx_usgxssl.lib;Ws2_32.lib’’
 	 ```
