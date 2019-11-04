@@ -22,20 +22,17 @@ If you already have a basic application and an enclave project, to use the Intel
 -   In the **Enclave** project (do these steps to all of your build environments):
 
 	-   Select **Properties->Linker->Input->Additional Dependencies:**
+
 	    Add ‘‘libsgx_tsgxssl_crypto.lib; libsgx_tsgxssl.lib;’’
 	    ```
 	      In this part we are declaring the lib files that we want to use (in this case the two lib files that are sepreated with ; 
 	    ```
 	   -   Select **Properties->Linker->General->Additional Library Directories:**
-	 Add the folder where you placed the libraries, (you better use the 	built in macros like \$(SolutionDir)\$(Platform)\\$(Configuration)\ 	etc. so you can control the different builds)
+	 Add the folder where you placed the libraries, (you better use the built in macros like \$(SolutionDir)\$(Platform)\\$(Configuration)\ 	etc. so you can control the different builds)
 			```
-			In this part, we are adding the path that 
-			.lib files exit on. usually, they are in the path
-			that you extract them in the lib folder and the
-			rest depends on your configuration (32 or 64 and
-			debug or release) just the path to the file is
-			enough you don't need to add the
-			file name at the end.
+			In this part, we are adding the path that .lib files exit on. usually, they are in the path
+			that you extract them in the lib folder and the rest depends on your configuration (32 or 64 and
+            debug or release) just the path to the file is enough you don't need to add the file name at the end.
 			```
 
 		-   To add the folder where you placed the EDL file, right click your EDL file, then select
