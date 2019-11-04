@@ -7,9 +7,7 @@ If you already have a basic application and an enclave project, to use the Intel
 
 - In visual studio you will need to do the following (assuming you already have basic App + Enclave project):
 	 ``` 
-	 if you don't have any project you can simply use the
-	 "SampleEnclave" project which can be found in SDK
-	 as test project
+	 if you don't have any project you can simply use the "SampleEnclave" project which can be found in SDK as test project
 	```
 
 
