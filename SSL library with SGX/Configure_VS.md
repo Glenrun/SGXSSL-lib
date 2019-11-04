@@ -16,8 +16,7 @@ If you already have a basic application and an enclave project, to use the Intel
 -   In your EDL file add:
    from "sgx_tsgxssl.edl" import *;
 	   ```  
-	   This file can be found in either the App or Enclave on 
-	   the src directory
+	   This file can be found in either the App or Enclave on the src directory
 	   ```
 
 -   In the **Enclave** project (do these steps to all of your build environments):
@@ -25,12 +24,9 @@ If you already have a basic application and an enclave project, to use the Intel
 	-   Select **Properties->Linker->Input->Additional Dependencies:**
 	    Add ‘‘libsgx_tsgxssl_crypto.lib; libsgx_tsgxssl.lib;’’
 	    ```
-	      In this part we are declaring the lib files that 
-	      we want to use (in this case the two lib files
-	      that are sepreated with ; 
-	      ```
+	      In this part we are declaring the lib files that we want to use (in this case the two lib files that are sepreated with ; 
+	    ```
 	   -   Select **Properties->Linker->General->Additional Library Directories:**
-	   Intel® Software Guard Extensions SSL Developer Guide
 	 Add the folder where you placed the libraries, (you better use the 	built in macros like \$(SolutionDir)\$(Platform)\\$(Configuration)\ 	etc. so you can control the different builds)
 			```
 			In this part, we are adding the path that 
