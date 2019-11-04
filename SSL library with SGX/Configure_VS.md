@@ -96,7 +96,14 @@ EDL file path is on the extracted path for library in the include folder.
 This path is on the extracted path for library in the include folder.
 ```
 
-  
+### using the library 
+In you enclave you can do the following steps: 
+
+-   Add “#include <windows.h>” before the “#include <openssl\xxx>” statements. The “windows.h” file is found in the Intel® SGX SSL include directory, and contains several definitions required by many of the OpenSSL headers.
+
+-   Before using any OpenSSL API, you must include OpenSSL header that declares it. (e.g. <openssl\crypto.h>, <openssl\sha.h>, <openssl\ripemd.h>)
+
+They have already been added to the path 
 
 ## References
 
