@@ -35,13 +35,16 @@ If you already have a basic application and an enclave project, to use the Intel
             debug or release) just the path to the file is enough you don't need to add the file name at the end.
 			```
 
-		-   To add the folder where you placed the EDL file, right click your EDL file, then select
- **Properties->Custom Build Tool->Command Line:**  
-  Add the EDL file path to the ‘--search path’ separated with ‘;’
- ``` EDL file path is on the extracted path for library in the include folder.```
+		-   To add the folder where you placed the EDL file, right click your EDL file, then select **Properties->Custom Build Tool->Command Line:**  
+        Add the EDL file path to the ‘--search path’ separated with ‘;’
+        ```
+         EDL file path is on the extracted path for library in the include folder.
+        ```
 
 	-   Select **Properties->C/C++->General->Additional Include Directories** and add the folder where Intel® SGX SSL header files are located. (<path to the package>\include)
- ``` This path is on the extracted path for library in the include folder.```			
+    ```
+     This path is on the extracted path for library in the include folder.
+     ```			
 
 
 -   In the **Application** project, use the following steps to set up the environment for the Intel® SGX SSL library:
@@ -66,10 +69,15 @@ If you already have a basic application and an enclave project, to use the Intel
 		file name at the end.
 	```
 	-   To add the folder where you placed the EDL file, right click your EDL file, then select **Properties->Custom Build Tool->Command Line:**  
-    Add the EDL file path to the ‘--search path’ separated with ‘;’ ``` EDL file path is on the extracted path for library in the include folder.```
+    Add the EDL file path to the ‘--search path’ separated with ‘;’ 
+    ```
+        EDL file path is on the extracted path for library in the include folder.
+    ```
 
 	-   If your project does not use Intel compiler, add the path to the Intel compiler libraries through **Properties->Linker->General->Additional Library Directories**
-	 ``` This path is on the extracted path for library in the include folder.```	
+	 ```
+      This path is on the extracted path for library in the include folder.
+    ```	
 
 ## References 
 [1]  “Intel® Software Guard Extensions SSL (Intel® SGX SSL) Library.” _Github_, github.com/intel/intel-sgx-ssl/blob/master/Windows/package/docs/Intel(R)%20Software%20Guard%20Extensions%20SSL%20Library%20Windows%20Developer%20Guide.pdf.
